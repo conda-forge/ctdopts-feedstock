@@ -5,7 +5,7 @@ Home: https://github.com/WorkflowConversion/CTDopts
 
 Package license: GPL
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: module for CTD handling
 
