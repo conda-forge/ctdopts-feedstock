@@ -1,5 +1,5 @@
 {% set name = "CTDopts" %}
-{% set version = "1.4" %}
+{% set version = "1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/WorkflowConversion/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 93a35024a9d3109e8984b10714808f390a5727ffcd78a9b274aaf65b5d615fe1
+  sha256: 0162fc066555f8f82dbb47a285393c58c864b1fcf549eacabba9e16b2dec9f73
 
 build:
   number: 0
@@ -17,9 +17,9 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
-    - python
+    - python >=3.6
 
 test:
   imports:
