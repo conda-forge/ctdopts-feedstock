@@ -10,18 +10,20 @@ source:
   sha256: 0162fc066555f8f82dbb47a285393c58c864b1fcf549eacabba9e16b2dec9f73
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - CTDopts
 
